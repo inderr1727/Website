@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inderjit Singh - Marketing Executive</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Inderjit Singh</div>
+        <button class="menu-button" aria-label="Toggle Menu" aria-expanded="false" onclick="toggleMenu()">
+          <span class="menu-icon" id="menu-icon">☰</span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#" class="nav-contact-button">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h3>___<br>Marketing Executive</h3>
+            <h1>Your Growth is My Mission!</h1>
+            <p>I Create Marketing Campaigns That Sell, Not Just Tell ! Helping Businesses Scale with Perfect Marketing Strategies that Generate Leads and Revenue.</p>
+              <div class="contact-icon">
+                 <a href="#" class="contact-button">Contact Me &nbsp;→</a>
+            
+                  <div class="social-icons">
+                     <img src="Call.png" alt="Icon 1">
+                     <img src="Instagram.png" alt="Icon 2">
+                     <img src="linkedin.png" alt="Icon 3">
+                     <img src="EMail.png" alt="Icon 4">
+                  </div>
+              </div>
+            <div  class="hero-line"> </div>
+        </div>
+        <div class="image-placeholder">
+            <img src="hero.png" alt="Inderjit Singh Logo Img">
+        </div>
+    </section>
+
+    <section class="specialization">
+        <div class="section-heading">
+            <h2>Marketing Services I Specialized :</h2>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item">
+                <div class="card">
+                    <div class="inner-card">
+                       <h3>Digital Marketing</h3>
+                       <div class="line"></div>
+                       <p>Driving growth through targeted online strategies.</p>
+                       <!-- <a id="Readmore" href="#">Read more ....</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <div class="inner-card">
+                       <h3>Campaign Management</h3>
+                       <div class="line"></div>
+                       <p>Executing successful marketing campaigns from start to finish.</p>
+                       <!-- <a id="Readmore" href="#">Read more ....</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <div class="inner-card">
+                       <h3>Brand Management</h3>
+                       <div class="line"></div>
+                       <p>Building and maintaining strong brand identities.</p>
+                       <!-- <a id="Readmore" href="#">Read more ....</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <div class="inner-card">
+                       <h3>Market Research</h3>
+                       <div class="line"></div>
+                       <p>Gathering insights to drive business strategies.</p>
+                       <!-- <a id="Readmore" href="#">Read more ....</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <div class="inner-card">
+                       <h3>Strategy Planning</h3>
+                       <div class="line"></div>
+                       <p>Crafting long-term business strategies for success.</p>
+                       <!-- <a id="Readmore" href="#">Read more ....</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="cta-button">See All Specializations </a>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.nav-links');
+            const menuButton = document.querySelector('.menu-button');
+            const menuIcon = document.getElementById('menu-icon');
+            menu.classList.toggle('show-menu');
+            menuButton.setAttribute('aria-expanded', menu.classList.contains('show-menu'));
+            
+            if (menu.classList.contains('show-menu')) {
+                menuIcon.textContent = '🗙';
+            } else {
+                menuIcon.textContent = '☰';
+            }
+        }
+        
+    </script>
+</body>
+</html>
+
+
+
+
+<body class="about-section">
+ <section class="about-me">
+        <div class="content">
+            <div class="image-container">
+                <img src="hero.png" alt="Professional Portrait"> </div>
+            <div class="text-content">
+                <p class="subheading">ABOUT ME</p>
+                <h2>I'm Inderjit Singh ,<br>Your Growth Partner.</h2>
+                <p class="description">
+                    I am a passionate and performance-driven marketing executive with a deep understanding of digital trends, consumer psychology, and brand positioning .   </p>
+                <a href="#" class="more-link">More About Me </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
+<body>
+    <section class="faq-section">
+      <div class="faq-container">
+          <div class="faq-left">
+              <h2>FAQ</h2>
+              <p>Didn’t find the question you were looking for?</p>
+              <a href="#" class="contact-link">Contact me <span>→</span></a> </div>
+          <div class="faq-right">
+              <div class="accordion">
+                  <div class="accordion-item">
+                      <div class="question">What areas of law do you specialize in? <span class="arrow">▼</span></div>
+                      <div class="answer">I specialize in family law, estate planning, and small business support.  </div>
+                  </div>
+                  <div class="accordion-item">
+                      <div class="question">How much do your services cost? <span class="arrow">▼</span></div>
+                      <div class="answer">My pricing varies depending on the complexity of the case. Contact me for a personalized quote.</div>
+                  </div>
+                   <div class="accordion-item">
+                      <div class="question"> What is your experience in [Specific area of law]?  <span class="arrow">▼</span></div>
+                      <div class="answer"> I have [Number] years of experience in [Specific area of law], handling a wide range of cases from [brief description of experience].</div>
+                  </div>
+                  <div class="accordion-item">
+                      <div class="question">How do I schedule a consultation? <span class="arrow">▼</span></div>
+                      <div class="answer"> You can schedule a consultation by contacting me through the contact form on this website or by calling me directly. </div>
+                  </div>
+                    <div class="accordion-item">
+                      <div class="question">What is your approach to handling cases? <span class="arrow">▼</span></div>
+                      <div class="answer">My approach is client-focused, aiming to understand your unique needs and goals. I provide clear communication, strategic advice, and dedicated representation throughout the legal process.</div>
+                  </div>
+  
+  
+              </div>
+          </div>
+      </div>
+      <script>
+      const accordionItems = document.querySelectorAll('.accordion-item');
+  
+      accordionItems.forEach(item => {
+          const question = item.querySelector('.question');
+          const answer = item.querySelector('.answer');
+          const arrow = item.querySelector('.arrow');
+  
+          question.addEventListener('click', () => {
+              item.classList.toggle('active');
+  
+             //using ternary operator to change height of answer smoothly
+              answer.style.maxHeight = item.classList.contains('active') ? answer.scrollHeight + 'px' : '0';
+  
+  
+             // Animate arrow rotation
+              arrow.style.transform = item.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0)';
+  
+          });
+      });
+  
+  </script>
+  </section>
+  
+  
+  </body>
+  </html>

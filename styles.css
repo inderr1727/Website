@@ -1,0 +1,888 @@
+:root {
+  --font-Libre: 'Libre Baskerville', serif;
+  font-weight: 400;
+  font-style: normal;
+
+  --font-varela: "Varela Round", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  --font-smooch: "Smooch Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+
+  --font-ptserif: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  --font-ptbold: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+
+
+
+  /* colour */
+  --colour-navy: color: #0a254b;
+  --colour-dark: color: #02172b;
+
+
+}
+
+
+
+@font-face {
+  font-family: 'Font-Mandrel'; /* Give your font a name */
+  src: url('Mandrel-NosrReg.otf') format('opentype'); /* Path to the .otf file */
+  font-weight: 500; /* or bold, 400, 700, etc. */
+  font-style: normal; /* or italic, oblique, etc. */
+}
+
+
+
+html {
+  font-size: 10px;
+}
+
+
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Lora', sans-serif;
+  line-height: 1.6; /* Improves readability */
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #0a254b;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0a254b; /* Darker blue on hover */
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.32rem 3.2rem; /* converted rem values */
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.8rem; /* converted rem values */
+  margin-left: 8rem;
+  margin-top: 0.3rem;
+  font-weight: bold;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #2F4F70;
+}
+
+.nav-links {
+  list-style: none;
+  font-size: 1.1rem; /* converted rem values */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-right: 8.4rem; /* converted rem values */
+}
+
+.nav-links li {
+  margin-left: -2.24rem; /* converted rem values */
+  margin-right: 6rem; /* converted rem values */
+  margin-top: 0.3rem;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+}
+
+.nav-contact-button {
+  padding: 0.35rem 1.675rem; /* converted rem values */
+  border-radius: 2rem;
+  border: 0.2rem solid #0a254b;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-contact-button:hover {
+  background-color: #0a254b;
+  color: white;
+}
+
+.menu-button {
+  display: none; /* Hide by default on larger screens */
+  background: none;
+  border: none;
+  font-size: 1.83rem; /* converted rem values */ /* Make button bigger on mobile */
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 5.16rem; /* converted rem values */ /* Push button to the right */
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 6.4rem;
+  background: linear-gradient(to bottom, #F8F9FF, #FFFFFF);
+  height: auto; /* Allow it to grow */
+  max-height: none; /* Remove any restriction on height */
+  min-height: 680px; /* Ensures it doesn't shrink too much */
+  box-sizing: border-box;
+  overflow: visible; /* Allows content to expand */
+  flex-wrap: wrap; /* Allows items to move to the next line if needed */
+}
+
+
+.hero-content {
+  max-width: 50%;
+  margin-left: 4.8rem; /* converted rem values */ /* Limit width for better readability on large screens */
+}
+
+.hero h3 {
+  font-size: 2rem; /* converted rem values */
+  font-family: "Smooch Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.04rem;
+  line-height: 3.2rem; /* converted rem values */
+  margin-top: 1.4rem; /* converted rem values */
+  margin-bottom: 2.8rem; /* converted rem values */
+  color: #0a254b;
+}
+
+.hero h1 {
+  font-size: 4.1rem; /* converted rem values */
+  font-family: var(--font-ptserif);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: bold;
+  word-spacing: 0.25rem;
+  margin-bottom: 3.2rem; /* converted rem values */
+  margin-left: -0.3rem; /* converted rem values */
+  color: #02172b;
+}
+
+.hero p {
+  font-size: 1.76rem; /* converted rem values */
+  font-family: var(--font-varela), var(--font-Libre);
+  font-weight: 300;
+  letter-spacing: 0.02rem;
+  word-spacing: 0.16rem;
+  margin-bottom: 4.8rem; /* converted rem values */
+  max-width: 52rem; /* converted rem values */
+  color: #0a254b;
+}
+
+.contact-button {
+  display: inline-block; /* Make it act like a link */
+  margin-right: 4rem;
+  padding: 0.6rem 4rem; /* converted rem values */
+  background-color: #0a254b;
+  color: #fff;
+  border: 0.3rem solid #0a254b;
+  border-radius: 2.5rem;
+  letter-spacing: 0.16rem;
+  font-size: 1.46rem;
+  font-weight: bold;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #f8fbff; /* Darker blue */
+  color: #0a254b;
+}
+
+.hero-line {
+  width: 99.4%; /* converted rem values */
+  height: 0.26rem;
+  background-color: #0a254b;
+  margin-top: 5.4rem;
+  margin-bottom: 0rem;
+  border-radius: 0.3rem;
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 3.1rem; /* Space between icons */
+  margin-left: 2.4rem; /* Space between button and icons */
+  align-items: center;
+}
+
+.social-icons img {
+  max-width: 34px;  /* Adjust size as needed */
+  max-height: 34px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2); /* Slight zoom effect on hover */
+}
+
+
+
+
+.image-placeholder {
+  width: 350px; /* Fixed width */
+  height: 350px; /* Fixed height */
+  margin-top: 7.2rem;
+  margin-right: 5.00001rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Ensures no unwanted overflow */
+}
+
+
+.image-placeholder img {
+  width: 350px; /* Fixed width */
+  height: 350px; /* Fixed height */
+  object-fit: cover; /* Ensures it maintains aspect ratio and fills the space */
+  display: block;
+}
+
+
+/* Specialization Section */
+.specialization {
+  padding: 9.6rem 9.6rem; /* converted rem values */
+  background-color: #F8F9FF;
+  text-align: center;
+}
+
+.section-heading h2 {
+  font-size: 2.8rem; /* converted rem values */
+  font-family: Font-Mandrel , var(--font-ptserif) ;
+  font-weight: 500;
+  color: #02172b;
+  margin-top: -3rem; /* converted rem values */
+  margin-bottom: 5.6rem; /* converted rem values */ /* Increased margin */
+  text-align: centre;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6.4rem; /* converted rem values */
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 1.4rem;
+  box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1); /* More defined shadow */
+  padding: 2.88rem 3.2rem; /* converted rem values */ /* Increased padding */
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inner-card {
+  margin-left: 1.41rem; /* converted rem values */
+}
+
+.card:hover {
+  transform: scale(1.03) ; /* Less dramatic scaling */
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.15); /* More pronounced shadow on hover*/
+  background-color: #0a254b;
+  color: #ffffff;
+  .line {
+    background-color: #ffffff;
+  }
+  .inner-card a {
+    color: #ffffff;
+  }
+}
+
+.line {
+  width: 4rem; /* converted rem values */
+  height: 0.2rem;
+  background-color: #0a254b;
+  margin-bottom: 2.24rem; /* converted rem values */
+  border-radius: 0.3rem;
+}
+
+.card h3 {
+  font-size: 2.4rem; /* converted rem values */
+  font-family: Font-Mandrel;
+  font-weight: 500;
+  color: var(--colour-dark);
+  margin-top: 1.6rem; /* converted rem values */
+  margin-bottom: 1.6rem; /* converted rem values */
+}
+
+.card p {
+  font-size: 1.5rem; /* converted rem values */
+  font-family: var(--font-varela);
+  font-weight: 500;
+  color: var(--colour-navy);
+  margin-bottom: 2.24rem; /* converted rem values */
+}
+
+/* 
+.inner-card a {
+  font-size: 1.54rem;
+  font-family: var(--font-ptbold);
+}
+*/
+
+.cta-button {
+  display: inline-block;
+  margin-top: 6.4rem; /* converted rem values */
+  background-color: #0a254b;
+  color: white;
+  font-size: 1.6rem; /* converted rem values */
+  padding: 0.72rem 3.2rem; /* converted rem values */
+  border: 0.3rem solid;
+  border-radius: 2rem;
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1rem rgba(30, 58, 102, 0.2); /* More visible shadow */
+  transition: background-color 0.04s ease;
+}
+
+.cta-button:hover {
+  background-color: #f8fbff; /* Darker blue */
+  color: #0a254b;
+}
+
+/* About Me Section Styles */
+.about-section {
+  background-color: #f8f9ff;
+}
+
+.about-me {
+  background-color: #1C2431;
+  padding: 10rem 4rem;
+  border-radius: 6rem;
+  overflow: hidden; /* Ensures rounded corners are not clipped by content */
+  margin-bottom: 7.36rem; /* converted rem values */
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers content horizontally */
+  gap: 5rem;
+}
+
+/* Image Container Styles */
+.image-container {
+  width: 40rem;
+}
+
+.image-container img {
+  width: 84%; /* Ensures image fills the container */
+  height: auto;
+  border-radius: 1.5rem;
+  box-shadow: 0px 0.2rem 1rem rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
+}
+
+/*text content style*/
+.text-content {
+  max-width: 60rem; /*added to restrict the width of text*/
+}
+
+.subheading {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #AAB6C7;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase; /* ensures uppercase text */
+  margin-bottom: 1rem; /* Adds spacing below the subheading*/
+}
+
+.text-content h2 {
+  font-family: var(--font-ptserif);
+  font-size: 3.2rem;
+  font-weight: 400;
+  color: white;
+  line-height: 1.4;
+  margin-bottom: 3.2rem; /* converted rem values */
+}
+
+.description {
+  font-family: var(--font-Libre);
+  font-size: 1.6rem;
+  color: #C0CFD9;
+  line-height: 1.6;
+  margin-bottom: 3.6rem; /* Adjusted margin-bottom for better spacing */
+}
+
+.more-link {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #ffffff;
+  border: white solid;
+  padding: 0.4rem 1.6rem;
+  text-decoration: none; /*removes default underline from anchor tag */
+  /* border-bottom: 0.1rem solid transparent; sets up for hover effect */
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.more-link:hover {
+  color: #0a254b;
+  background-color: #ffffff;
+  font-weight: 600;
+  border-color: #0a254b; /*underline on hover*/
+}
+
+/* FAQ Section Styles */
+.faq-section {
+  background: linear-gradient(to bottom, #F8F9FB, #EDEFF2);
+  padding: 6.4rem 3.2rem; /* converted rem values */
+  margin-top: -7rem;
+  text-align: left;
+}
+
+.faq-container {
+  max-width: 90rem;
+  margin: 0 auto;
+  display: flex;
+  gap: 4rem; /* Spacing between columns */
+}
+
+.faq-left {
+  flex: 1; /* Takes up available space */
+}
+
+.faq-left h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #1C2431;
+  margin-bottom: 0; /* Remove default margin */
+  text-decoration: underline;
+  text-decoration-color: #c0c0c0; /* Add a subtle underline */
+  text-underline-offset: 0.5rem; /* Offset the underline */
+}
+
+.faq-left p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.6rem;
+  color: #5A6A7C;
+  margin: 0.8rem 0 1.6rem;
+}
+
+.contact-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.7rem; /* converted rem values */
+  font-weight: 700;
+  color: var(--colour-navy);
+  margin-bottom: 2.56rem; /* converted rem values */
+  text-decoration: none;
+  display: inline-flex; /* Allows for aligning icon next to text */
+  align-items: center; /* Vertically aligns the text and icon */
+  transition: text-decoration 0.3s ease, transform 0.3s ease;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.contact-link span {
+  margin-left: 0.5rem; /* Small space between text and arrow */
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-link:hover span {
+  transform: translateX(0.5rem); /*moves arrow to right on hover */
+}
+
+.faq-right {
+  flex: 2; /* Takes double the space of the left column*/
+  max-width: 60rem;
+}
+
+.accordion {
+  background-color: white;
+  border-radius: 1.2rem;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1); /*subtle box shadow*/
+  overflow: hidden; /*hides any content that overflows */
+}
+
+.accordion-item {
+  border-bottom: 1.6rem solid #EEEEEE; /*light gray border between items*/
+}
+
+.question {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1C2431;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.question:hover {
+  background-color: #f9f9f9; /* Very light gray on hover */
+}
+
+.question .arrow {
+  font-size: 1.6rem;
+  color: #5A6A7C;
+  transition: transform 0.3s ease-in-out;
+}
+
+.accordion-item.active .arrow {
+  transform: rotate(180deg);
+}
+
+.answer {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  color: #5A6A7C;
+  padding: 1.5rem 2rem; /*consistent padding with questions */
+  max-width: 68rem;
+  line-height: 1.5;
+  overflow: hidden;
+  max-height: 0; /* Initially hidden */
+  transition: max-height 0.3s ease-in-out; /* Smooth transition for height */
+  display: none; /* Hide the answer by default  */
+}
+
+.accordion-item.active .answer {
+  max-height: 50rem; /* Adjust as needed to comfortably fit answer content */
+  display: block !important; /* Show answer when active */
+}
+
+/* Media Queries for Responsiveness */
+/* Tablet and smaller screens */
+@media screen and (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .logo {
+    margin-left: 0rem;
+  }
+
+
+  .hero h3 {
+    margin-top: -1.6rem; /* converted rem values */
+    margin-bottom: 4.16rem; /* converted rem values */
+  }
+
+  .hero-content {
+    max-width: 100%; /* Content takes full width */
+    margin-top: 3.2rem; /* converted rem values */ /* Add some space between image and content */
+    margin-left: 0rem;
+  }
+
+  .hero-line {
+    margin-bottom: 4rem; /* converted rem values */
+  }
+
+
+  .social-icons {
+    gap: 3.1rem;
+  }
+
+  .image-placeholder {
+    margin: 0 auto 4.8rem; /* converted rem values */ /* Center and add margin bottom */
+    margin-bottom: -1;
+  }
+
+  nav .nav-links {
+    display: none; /* Hide navigation links by default */
+    flex-direction: column; /* Align vertically when shown */
+    text-align: center; /* Center text in mobile menu */
+    width: 100%; /* Full width */
+    position: absolute;
+    top: 7rem; /* Position below the nav bar */
+    left: 0; /* Cover entire width */
+    background-color: #fff;
+    padding: 2.24rem 0; /* converted rem values */
+    border-bottom: 0.2rem solid #ccc;
+  }
+
+  .nav-links.show-menu {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 1.6rem 0; /* converted rem values */
+    margin-right: 5.76rem; /* converted rem values */
+  }
+
+  nav .menu-button {
+    display: block;
+  }
+
+  .content {
+    flex-direction: column; /* Stacks image and text vertically on smaller screens */
+    text-align: center; /* Centers text content */
+  }
+
+  .image-container {
+    width: 90%;
+    max-width: 40rem; /* Ensures image doesn't exceed a certain width */
+    margin-bottom: 3rem; /* Adds space between image and text */
+  }
+
+
+  .description {
+    margin-bottom: 5rem; /* Adjusted margin-bottom for better spacing */
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+
+  .image-placeholder {
+    margin-top: 6.4rem; /* converted rem values */
+    margin-bottom: 0rem;
+  }
+
+  h1 {
+    margin-top: -2.24rem; /* converted rem values */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* One column layout */
+  }
+
+  .logo {
+    margin-left: 0rem;
+  }
+
+  .image-placeholder {
+    margin-top: 7.68rem; /* converted rem values */
+    margin-bottom: 0rem;
+  }
+
+  .hero h1 {
+    font-size: 3.52rem; /* converted rem values */
+  }
+
+  .specialization {
+    padding: 9.6rem 6.4rem; /* converted rem values */
+  }
+
+
+  
+  @media (max-width: 768px) {
+    .faq-container {
+      flex-direction: column; /* Stack columns vertically */
+      gap: 2rem;
+    }
+
+    .faq-right {
+      max-width: 100%; /*faq-right takes full width */
+    }
+  }
+
+  .faq-left {
+    margin-left: 2rem;
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+
+  .contact-icon {
+    display: inline;
+      gap: 3.2rem;
+
+  }
+
+
+  .contact-button {
+    margin-left: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .social-icons {
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-bottom: -1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+}
+
+
+/* Small mobile screens */
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 1.68rem; /* converted rem values */
+    margin-left: -0.96rem; /* converted rem values */
+  }
+
+  .hero h3 {
+    font-size: 1.6rem; /* converted rem values */
+    margin-top: 0rem;
+    margin-bottom: -2rem;
+  }
+
+  .hero h1 {
+    font-size: 3.2rem; /* converted rem values */
+    max-width: 86%;
+    margin: auto;
+    line-height: 4.6rem;
+    margin-top: 6rem; /* converted rem values */
+    margin-bottom: 3rem; /* converted rem values */
+  }
+
+  .hero p {
+    max-width: 84%;
+    margin: auto;
+    font-size: 1.7rem; /* converted rem values */
+    margin-bottom: 4.6rem; /* converted rem values */
+  }
+
+  .hero-line {
+    margin-bottom: 3.6rem;
+  }
+
+  .image-placeholder {
+    margin-top: 6.8rem;
+    margin-bottom: -2rem;
+    max-width: 160px !important;
+    max-height: 160px !important;
+  }
+  
+
+  .image-placeholder img {
+    max-width: 160px !important;
+    max-height: 160px !important;
+  }
+
+
+
+  .specialization {
+    padding: 10rem 3.2rem; /* converted rem values */
+  }
+  
+
+  .section-heading h2 {
+    margin-top: -3rem;
+    margin-bottom: 6.4rem;
+  }
+
+  .grid-container {
+    gap: 6rem ;
+  }
+
+
+
+
+  .text-content {
+    margin-top: -4rem;
+  }
+
+
+  .text-content h2 {
+    font-size: 2.8rem;
+  }
+
+  .text-content p {
+    font-size: 1.56rem;
+  }
+
+
+
+
+  .faq-left {
+    margin-left: 2rem;
+  }
+}
+
+
+@media (max-width: 1200px),
+       (max-width: 1024px),
+       (max-width: 768px) {
+
+  .image-placeholder {
+    width: 300px !important;
+    height: 300px !important;
+  }
+  .image-placeholder img {
+    width: 300px !important;
+    height: 300px !important;
+  }
+}
+
+
+@media (max-width: 1000px) {
+
+  .hero {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    justify-content: flex-start; /* Ensure content stacks properly */
+    min-height: 940px; /* Allow natural height growth */
+    padding: 4rem 2rem; /* Adjust padding for better spacing */
+    flex-direction: column-reverse;
+  }
+
+  .hero-content {
+    max-width: 100%; /* Take full width on smaller screens */
+    text-align: center; /* Center text for better readability */
+    margin: 0 auto; /* Center it */
+    
+}
+
+  .image-placeholder {
+    width: 300px; /* Fixed width */
+    height: 300px; /* Fixed height */
+    margin-top: 5rem;
+  }
+
+
+  .hero h3 {
+    margin-top: 1.8rem; /* Adjusted margin-top */
+    line-height: 2.6rem;
+  }
+
+
+  .hero-line {
+    margin-bottom: 6rem;
+
+  }
+
+ }
+
+  /* .hero-line {
+     display: none;
+  } */
+
+
+
+
+
