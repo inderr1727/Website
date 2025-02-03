@@ -139,7 +139,7 @@ nav {
   background: linear-gradient(to bottom, #F8F9FF, #FFFFFF);
   height: auto; /* Allow it to grow */
   max-height: none; /* Remove any restriction on height */
-  min-height: 680px; /* Ensures it doesn't shrink too much */
+  min-height: 650px; /* Ensures it doesn't shrink too much */
   box-sizing: border-box;
   overflow: visible; /* Allows content to expand */
   flex-wrap: wrap; /* Allows items to move to the next line if needed */
@@ -286,6 +286,7 @@ nav {
   grid-template-columns: repeat(3, 1fr);
   gap: 6.4rem; /* converted rem values */
 }
+
 
 .card {
   background-color: #fff;
@@ -738,6 +739,13 @@ nav {
 }
 
 
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+
 /* Small mobile screens */
 @media screen and (max-width: 480px) {
   .logo {
@@ -878,11 +886,29 @@ nav {
 
  }
 
-  /* .hero-line {
-     display: none;
-  } */
 
 
 
+
+@media screen and (min-width: 1000px) and (max-width: 1200px ) {
+  .hero-content {
+    max-width: 46%; /* Take full width on smaller screens */
+    text-size-adjust: 60%; 
+  }
+
+
+  .social-icons {
+    margin-left: -0.4rem;
+    gap: 1.4rem;
+  }
+
+
+  .social-icons img {
+    max-width: 26px;
+    max-height: auto;
+  }
+
+
+}
 
 
