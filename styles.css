@@ -19,6 +19,15 @@
   font-weight: 700;
   font-style: normal;
 
+  --font-mont:  "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+
+
+  --font-lora: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+
 
 
   /* colour */
@@ -89,7 +98,7 @@ nav {
 
 .nav-links {
   list-style: none;
-  font-size: 1.1rem; /* converted rem values */
+  font-size: 1.2rem; /* converted rem values */
   margin: 0;
   padding: 0;
   display: flex;
@@ -147,25 +156,25 @@ nav {
 
 
 .hero-content {
-  max-width: 50%;
+  max-width: 44%;
   margin-left: 4.8rem; /* converted rem values */ /* Limit width for better readability on large screens */
 }
 
 .hero h3 {
-  font-size: 2rem; /* converted rem values */
-  font-family: "Smooch Sans", serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  letter-spacing: 0.04rem;
-  line-height: 3.2rem; /* converted rem values */
-  margin-top: 1.4rem; /* converted rem values */
-  margin-bottom: 2.8rem; /* converted rem values */
+  font-size: 1.298rem; /* converted rem values */
+  font-family: var(--font-varela), var(--font-Libre);
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.046rem;
+  word-spacing: 0.42rem;
+  line-height: 2.8rem; /* converted rem values */
+  margin-top: 2.6rem; /* converted rem values */
+  margin-bottom: 2.2rem; /* converted rem values */
   color: #0a254b;
 }
 
 .hero h1 {
-  font-size: 4.1rem; /* converted rem values */
+  font-size: 3.8rem; /* converted rem values */
   font-family: var(--font-ptserif);
   font-optical-sizing: auto;
   font-weight: 500;
@@ -177,12 +186,13 @@ nav {
 }
 
 .hero p {
-  font-size: 1.76rem; /* converted rem values */
+  font-size: 1.8rem; /* converted rem values */
   font-family: var(--font-varela), var(--font-Libre);
   font-weight: 300;
   letter-spacing: 0.02rem;
+  line-height: 3rem;
   word-spacing: 0.16rem;
-  margin-bottom: 4.8rem; /* converted rem values */
+  margin-bottom: 5.8rem; /* converted rem values */
   max-width: 52rem; /* converted rem values */
   color: #0a254b;
 }
@@ -190,13 +200,13 @@ nav {
 .contact-button {
   display: inline-block; /* Make it act like a link */
   margin-right: 4rem;
-  padding: 0.6rem 4rem; /* converted rem values */
+  padding: 0.34rem 3.4rem; /* converted rem values */
   background-color: #0a254b;
   color: #fff;
   border: 0.3rem solid #0a254b;
   border-radius: 2.5rem;
   letter-spacing: 0.16rem;
-  font-size: 1.46rem;
+  font-size: 1.44rem;
   font-weight: bold;
   font-family: "Lora", serif;
   font-optical-sizing: auto;
@@ -210,10 +220,10 @@ nav {
 }
 
 .hero-line {
-  width: 99.4%; /* converted rem values */
+  width: 101%; /* converted rem values */
   height: 0.26rem;
   background-color: #0a254b;
-  margin-top: 5.4rem;
+  margin-top: 5.2rem;
   margin-bottom: 0rem;
   border-radius: 0.3rem;
 }
@@ -225,14 +235,15 @@ nav {
 
 .social-icons {
   display: flex;
+  margin-top: 0.34rem;
   gap: 3.1rem; /* Space between icons */
   margin-left: 2.4rem; /* Space between button and icons */
   align-items: center;
 }
 
 .social-icons img {
-  max-width: 34px;  /* Adjust size as needed */
-  max-height: 34px;
+  max-width: 30px;  /* Adjust size as needed */
+  max-height: 30px;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
@@ -276,15 +287,15 @@ nav {
   font-family: Font-Mandrel , var(--font-ptserif) ;
   font-weight: 500;
   color: #02172b;
-  margin-top: -3rem; /* converted rem values */
-  margin-bottom: 5.6rem; /* converted rem values */ /* Increased margin */
+  margin-top: -2rem; /* converted rem values */
+  margin-bottom: 5.8rem; /* converted rem values */ /* Increased margin */
   text-align: centre;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 6.4rem; /* converted rem values */
+  gap: 6.88rem; /* converted rem values */
 }
 
 
@@ -292,14 +303,11 @@ nav {
   background-color: #fff;
   border-radius: 1.4rem;
   box-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1); /* More defined shadow */
-  padding: 2.88rem 3.2rem; /* converted rem values */ /* Increased padding */
+  padding: 2.78rem 2.44rem; /* converted rem values */ /* Increased padding */
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.inner-card {
-  margin-left: 1.41rem; /* converted rem values */
-}
 
 .card:hover {
   transform: scale(1.03) ; /* Less dramatic scaling */
@@ -318,6 +326,7 @@ nav {
   width: 4rem; /* converted rem values */
   height: 0.2rem;
   background-color: #0a254b;
+  margin-left: 1.6rem;
   margin-bottom: 2.24rem; /* converted rem values */
   border-radius: 0.3rem;
 }
@@ -329,6 +338,7 @@ nav {
   color: var(--colour-dark);
   margin-top: 1.6rem; /* converted rem values */
   margin-bottom: 1.6rem; /* converted rem values */
+  margin-left: 1.6rem;
 }
 
 .card p {
@@ -336,6 +346,7 @@ nav {
   font-family: var(--font-varela);
   font-weight: 500;
   color: var(--colour-navy);
+  margin-left: 1.6rem;
   margin-bottom: 2.24rem; /* converted rem values */
 }
 
@@ -372,7 +383,7 @@ nav {
 
 .about-me {
   background-color: #1C2431;
-  padding: 10rem 4rem;
+  padding: 8.4rem 4rem;
   border-radius: 6rem;
   overflow: hidden; /* Ensures rounded corners are not clipped by content */
   margin-bottom: 7.36rem; /* converted rem values */
@@ -574,9 +585,17 @@ nav {
   display: block !important; /* Show answer when active */
 }
 
+
+
+
+
+
+
+
+
 /* Media Queries for Responsiveness */
 /* Tablet and smaller screens */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1000px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -591,11 +610,32 @@ nav {
     margin-bottom: 4.16rem; /* converted rem values */
   }
 
+
+  .hero p {
+    margin: 0 auto;
+    max-width: 80%;
+    margin-bottom: 3rem;
+  }
+
+
   .hero-content {
+    display: flex;
+    flex-direction: column;
     max-width: 100%; /* Content takes full width */
     margin-top: 3.2rem; /* converted rem values */ /* Add some space between image and content */
     margin-left: 0rem;
+    align-content: center;
+    text-align: center;
   }
+
+  .contact-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
 
   .hero-line {
     margin-bottom: 4rem; /* converted rem values */
@@ -655,6 +695,8 @@ nav {
 
 }
 
+
+
 @media screen and (max-width: 1000px) {
 
 
@@ -667,6 +709,75 @@ nav {
     margin-top: -2.24rem; /* converted rem values */
   }
 }
+
+
+
+
+@media (max-width: 1000px) {
+
+  .hero {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    justify-content: flex-start; /* Ensure content stacks properly */
+    min-height: 940px; /* Allow natural height growth */
+    padding: 4rem 2rem; /* Adjust padding for better spacing */
+    flex-direction: column-reverse;
+  }
+
+  .hero-content {
+    max-width: 74%; /* Take full width on smaller screens */
+    text-align: center; /* Center text for better readability */
+    margin: 0 ; /* Center it */
+    
+}
+
+
+  .image-placeholder {
+    width: 300px; /* Fixed width */
+    height: 300px; /* Fixed height */
+    margin-top: 5rem;
+  }
+
+
+  .hero h3 {
+    margin-top: 1.8rem; /* Adjusted margin-top */
+    line-height: 2.6rem;
+  }
+
+
+  .hero-line {
+    margin-bottom: 6rem;
+
+  }
+
+ }
+
+
+
+
+
+@media screen and (min-width: 1001px) and (max-width: 1200px ) {
+  .hero-content {
+    max-width: 46%; /* Take full width on smaller screens */
+    text-size-adjust: 40%; 
+  }
+
+
+  .social-icons {
+    margin-left: -0.4rem;
+    gap: 1.4rem;
+  }
+
+
+  .social-icons img {
+    max-width: 26px;
+    max-height: auto;
+  }
+
+
+}
+
+
 
 @media screen and (max-width: 768px) {
   .grid-container {
@@ -710,7 +821,7 @@ nav {
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 730px) {
 
 
   .contact-icon {
@@ -739,11 +850,17 @@ nav {
 }
 
 
-@media screen and (min-width: 600px) and (max-width: 992px) {
+@media screen and (min-width: 600px) and (max-width: 1000px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
 }
 }
+
+
+
+
+
+
 
 
 /* Small mobile screens */
@@ -753,18 +870,19 @@ nav {
     margin-left: -0.96rem; /* converted rem values */
   }
 
+
   .hero h3 {
-    font-size: 1.6rem; /* converted rem values */
+    font-size: 1.16rem; /* converted rem values */
     margin-top: 0rem;
     margin-bottom: -2rem;
   }
 
   .hero h1 {
-    font-size: 3.2rem; /* converted rem values */
+    font-size: 3rem; /* converted rem values */
     max-width: 86%;
     margin: auto;
     line-height: 4.6rem;
-    margin-top: 6rem; /* converted rem values */
+    margin-top: 4.6rem; /* converted rem values */
     margin-bottom: 3rem; /* converted rem values */
   }
 
@@ -772,7 +890,7 @@ nav {
     max-width: 84%;
     margin: auto;
     font-size: 1.7rem; /* converted rem values */
-    margin-bottom: 4.6rem; /* converted rem values */
+    margin-bottom: 3rem; /* converted rem values */
   }
 
   .hero-line {
@@ -781,7 +899,7 @@ nav {
 
   .image-placeholder {
     margin-top: 6.8rem;
-    margin-bottom: -2rem;
+    margin-bottom: 0rem;
     max-width: 160px !important;
     max-height: 160px !important;
   }
@@ -791,6 +909,71 @@ nav {
     max-width: 160px !important;
     max-height: 160px !important;
   }
+
+
+
+}
+  
+
+
+
+
+@media screen and (max-width: 480px) {
+  .hero {
+    min-height: auto; /* Allow the height to adjust based on content */
+    padding: 3rem 1rem; /* Reduce padding for smaller screens */
+    flex-direction: column-reverse; /* Stack content vertically */
+    justify-content: flex-start; /* Align content to the top */
+  }
+
+  .hero-content {
+    max-width: 100%; /* Take full width */
+    margin: 0 auto; /* Center the content */
+    text-align: center; /* Center-align text */
+  }
+
+  .hero h1 {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+    line-height: 3.2rem; /* Adjust line height for better readability */
+    margin-top: 5rem; /* Add some space above the heading */
+    margin-bottom: 3rem; /* Add some space below the heading */
+  }
+
+  .hero p {
+    font-size: 1.4rem; /* Adjust font size for smaller screens */
+    line-height: 2rem; /* Adjust line height for better readability */
+    margin-bottom: 2rem; /* Add some space below the paragraph */
+  }
+
+  .image-placeholder {
+    width: 200px; /* Reduce image size for smaller screens */
+    height: 200px; /* Reduce image size for smaller screens */
+    margin-top: 7rem; /* Add some space above the image */
+    margin-bottom: 0rem; /* Add some space below the image */
+  }
+
+  .image-placeholder img {
+    width: 100%; /* Ensure the image fills the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .hero-line {
+    margin-top: 2rem; /* Add some space above the line */
+    margin-bottom: 4rem; /* Add some space below the line */
+  }
+
+  .contact-button {
+    margin: 0 auto; /* Center the button */
+    margin-bottom: 4rem; /* Add some space below the button */
+    width: 60%;
+  }
+
+  .social-icons {
+    justify-content: center; /* Center the social icons */
+    margin-top: 1rem; /* Add some space above the icons */
+    margin-bottom: 2rem; /* Add some space below the icons */
+  }
+
 
 
 
@@ -846,69 +1029,4 @@ nav {
     height: 300px !important;
   }
 }
-
-
-@media (max-width: 1000px) {
-
-  .hero {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center;
-    justify-content: flex-start; /* Ensure content stacks properly */
-    min-height: 940px; /* Allow natural height growth */
-    padding: 4rem 2rem; /* Adjust padding for better spacing */
-    flex-direction: column-reverse;
-  }
-
-  .hero-content {
-    max-width: 100%; /* Take full width on smaller screens */
-    text-align: center; /* Center text for better readability */
-    margin: 0 auto; /* Center it */
-    
-}
-
-  .image-placeholder {
-    width: 300px; /* Fixed width */
-    height: 300px; /* Fixed height */
-    margin-top: 5rem;
-  }
-
-
-  .hero h3 {
-    margin-top: 1.8rem; /* Adjusted margin-top */
-    line-height: 2.6rem;
-  }
-
-
-  .hero-line {
-    margin-bottom: 6rem;
-
-  }
-
- }
-
-
-
-
-
-@media screen and (min-width: 1000px) and (max-width: 1200px ) {
-  .hero-content {
-    max-width: 46%; /* Take full width on smaller screens */
-    text-size-adjust: 60%; 
-  }
-
-
-  .social-icons {
-    margin-left: -0.4rem;
-    gap: 1.4rem;
-  }
-
-
-  .social-icons img {
-    max-width: 26px;
-    max-height: auto;
-  }
-
-
-}
-
 
